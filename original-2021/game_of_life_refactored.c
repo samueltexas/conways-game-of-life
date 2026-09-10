@@ -28,6 +28,7 @@ void initializeBoard(int board[WIDTH][HEIGHT])
      * Generate the initial population inside
      * a smaller area of the board.
      */
+    
     for (int x = 10; x < 90; x++)
     {
         for (int y = 5; y < 45; y++)
@@ -85,6 +86,7 @@ int countNeighbors(int board[WIDTH][HEIGHT], int x, int y)
             /*
              * Cells outside the board are considered dead.
              */
+            
             if (neighborX >= 0 && neighborX < WIDTH &&
                 neighborY >= 0 && neighborY < HEIGHT)
             {
@@ -113,6 +115,7 @@ void updateBoard(int board[WIDTH][HEIGHT])
              * 2. A dead cell becomes alive with exactly 3 neighbors.
              * 3. Otherwise the cell dies/remains dead.
              */
+            
             if (board[x][y] == 1 &&
                 (neighbors == 2 || neighbors == 3))
             {
