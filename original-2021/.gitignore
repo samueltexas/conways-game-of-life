@@ -1,0 +1,17 @@
+# Compiled C programs
+*.o
+*.out
+*.exe
+*.app
+
+# macOS
+.DS_Store
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*~
